@@ -69,6 +69,7 @@ int main()
             {
                 cout<<"to improve the time complexity, we rewrite the list to be a circular sequence and won't copy elements till all location has be occured (or the popfront and pushfront will copy all elements every time),the amortised complexity will be in φ(1)\n";
                 cout<< "successful case:\n";
+                cout<< "four pop and push operation:\n";
                 cout << "pushback 1\n";
                 mylist.pushback(1);
                 cout<< "the array is:\n";
@@ -85,6 +86,7 @@ int main()
                 cout << "popback\nthe array is:\n";
                 mylist.popback();
                 mylist.display();
+                cout<<"\nthe allocate operation:\n";
                 cout << "the array size was initialized as 20, the head and rear occur two position,we can mostly store 18 numbers without allocating\n";
                 cout << "the array is\n";
                 mylist.pushback(2);
@@ -111,8 +113,9 @@ int main()
                 cout << "the array is\n";
                 mylist.display();
                 cout << "the size of array is "<<mylist.getmaxsize()<<"\n";
-                cout << "the allocate function works well,now let's test deallocate function while numitems+2<maxsize/4 && maxsize>20 as we set minisize as 20";
-                cout << "\nwe push 157 numbers in first\n";
+                cout << "the allocate function works well\n";
+                cout<<"\ndeallocate operation while numitems+2<maxsize/4 && maxsize>20 as we set minisize as 20:\n";
+                cout << "we push 157 numbers in first\n";
                 for(int i=19;i <= 157;i++)
                 {
                     mylist.pushback(i);
@@ -128,7 +131,7 @@ int main()
                 cout << "the array is\n";
                 mylist.display();
                 cout << "now the numitems and arrysize are "<<mylist.getlength()<<" and "<<mylist.getmaxsize()<<"\n";
-                cout << "then we pop a number to leave 38 numbers. as the head and hear occurs two position, it will be just maxsize/4 items and should be deallocated\n";
+                cout << "then we pop a number to leave 38 numbers. as the head and rear occurs two position, it will be just maxsize/4 items and should be deallocated\n";
                 cout << "let's try it\n";
                 mylist.popback();
                 cout << "the array is\n";
