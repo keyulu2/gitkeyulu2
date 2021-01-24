@@ -67,6 +67,7 @@ int main()
             }
             case 6:
             {
+                cout<<"to improve the time complexity, we rewrite the list to be a circular sequence and won't copy elements till all location has be occured (or the popfront and pushfront will copy all elements every time),the amortised complexity will be in φ(1)\n";
                 cout<< "successful case:\n";
                 cout << "pushback 1\n";
                 mylist.pushback(1);
