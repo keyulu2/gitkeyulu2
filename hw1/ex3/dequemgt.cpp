@@ -153,7 +153,7 @@ int main()
                 cout << "now, pop the empty array to see what will happen\n";
                 cout << "the output is:\n";
                 mylist.popback();
-                cout << "in this case, we can't pop!";
+                cout << "in this case, we can't pop!\n";
                 break;
             }
         default:
